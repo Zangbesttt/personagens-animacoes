@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>O Último Sinal de Solária — Curta 3D</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#071326;font-family:Inter,Arial,sans-serif}
+#stage{position:relative;width:100vw;height:100vh;overflow:hidden}
+canvas{display:block;width:100%;height:100%}
+#shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(4,10,25,.42),transparent 23%,transparent 65%,rgba(4,8,20,.68))}
+#top{position:absolute;top:5.2%;left:6%;right:6%;text-align:center;color:#fff;text-shadow:0 3px 18px #071326;pointer-events:none}
+#eyebrow{font-size:clamp(10px,2.1vw,15px);letter-spacing:.34em;font-weight:800;color:#9de9ff}
+#title{font-size:clamp(25px,6vw,48px);line-height:1.02;font-weight:950;letter-spacing:-.04em;margin-top:8px}
+#captionWrap{position:absolute;left:7%;right:7%;bottom:7%;text-align:center;pointer-events:none}
+#caption{display:inline-block;max-width:100%;padding:12px 18px;border-radius:15px;background:rgba(3,12,28,.76);border:1px solid rgba(190,230,255,.22);color:#fff;font-size:clamp(16px,3.3vw,25px);font-weight:850;line-height:1.2;text-shadow:0 2px 5px #000;box-shadow:0 8px 32px #0005}
+#chapter{margin-top:10px;color:#b8d9ee;font-size:clamp(9px,1.7vw,13px);letter-spacing:.22em;font-weight:800;text-transform:uppercase}
+#progress{position:absolute;bottom:0;left:0;height:4px;width:0;background:linear-gradient(90deg,#63e7ff,#a8ffbd,#ffe37a)}
+#controls{position:absolute;right:14px;top:14px;display:flex;gap:8px}
+button,#controls a{border:1px solid #ffffff40;background:#08182dcc;color:#fff;padding:9px 13px;border-radius:20px;font-weight:700;cursor:pointer;text-decoration:none;font-size:12px}
+#hint{position:absolute;left:14px;top:15px;color:#d8efff;font-size:11px;opacity:.75;letter-spacing:.08em}
+@media(max-width:520px){#controls{top:auto;bottom:14px;right:12px}#captionWrap{bottom:12%}}
+#top{transition:opacity .8s ease}
+body.exporting #controls,body.exporting #hint,body.exporting #progress{display:none}
+body.exporting #top{transition:none}
+</style>
+</head>
+<body>
+<div id="stage">
+ <canvas id="film"></canvas><div id="shade"></div>
+ <div id="top"><div id="eyebrow">UM CURTA ORIGINAL EM 3D</div><div id="title">O ÚLTIMO SINAL<br>DE SOLÁRIA</div></div>
+ <div id="captionWrap"><div id="caption">Na cidade de Solária, a noite nunca assustava ninguém.</div><div id="chapter">CAPÍTULO 01 · A CIDADE DAS LUZES</div></div>
+ <div id="hint">3D · CÂMERA CINEMATOGRÁFICA</div>
+ <div id="controls"><button id="toggle">Pausar</button><button id="restart">Reiniciar</button><a href="O_ULTIMO_SINAL_DE_SOLARIA_3D_FINAL.mp4" target="_blank">Assistir MP4</a><a href="roteiro.md" target="_blank">Roteiro</a></div>
+ <div id="progress"></div>
+</div>
+<script type="module" src="./animacao.js"></script>
+</body></html>
