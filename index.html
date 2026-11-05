@@ -1,64 +1,19 @@
 ﻿<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Personagem SVG animado</title>
-<style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(145deg,#eaf1f7,#cbd8e4);font-family:Arial,sans-serif;color:#203040}
-main{width:min(920px,94vw);padding:26px;border-radius:24px;background:#ffffffc9;box-shadow:0 18px 55px #29445a24;text-align:center}
-h1{font-size:clamp(20px,3vw,30px);margin:0 0 6px}p{margin:0 0 12px;color:#526779}
-.stage{height:min(72vh,620px);min-height:380px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 85%,#9fb5c5 0 17%,transparent 18%),linear-gradient(#d9e8ee,#eff5f6);border-radius:18px;overflow:hidden}
-svg{height:94%;max-width:100%;filter:drop-shadow(0 14px 10px #243b4a25)}
-/* personagem parado, com proporÃ§Ãµes de mascote de jogo */
-</style>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body><main>
-<h1>Personagem explicativo</h1><p>Mascote de capacete amarelo, uniforme laranja e calça azul — animações leves.</p>
-<div class="stage">
-<svg viewBox="0 0 420 560" role="img" aria-label="Mascote trabalhador com capacete amarelo e uniforme laranja">
-<defs>
- <linearGradient id="helmet" x2="0" y2="1"><stop stop-color="#ffe66a"/><stop offset="1" stop-color="#e9a900"/></linearGradient>
- <linearGradient id="skin" x2="1" y2="1"><stop stop-color="#f2c58f"/><stop offset="1" stop-color="#c98551"/></linearGradient>
- <linearGradient id="shirt" x2="1" y2="1"><stop stop-color="#ff9b27"/><stop offset="1" stop-color="#d95b0b"/></linearGradient>
- <linearGradient id="pants" x2="1" y2="1"><stop stop-color="#2869a6"/><stop offset="1" stop-color="#123d70"/></linearGradient>
-</defs>
-<!-- pernas -->
-<path d="M165 365 L210 365 L205 480 L174 480 Z" fill="url(#pants)"/>
-<path d="M211 365 L255 365 L260 480 L226 480 Z" fill="url(#pants)"/>
-<path d="M174 470 L207 470 L208 500 Q205 511 166 511 L151 503 Q151 493 174 470Z" fill="#30343a"/>
-<path d="M226 470 L259 470 L282 499 Q282 511 245 511 L220 507Z" fill="#30343a"/>
-<path d="M160 500 Q182 506 207 500 M226 500 Q250 506 276 501" fill="none" stroke="#626b73" stroke-width="5"/>
-<!-- braÃ§os -->
-<path d="M145 215 Q112 225 105 280 L91 346 Q89 363 105 367 Q120 369 126 351 L151 285Z" fill="url(#shirt)" stroke="#b64c0b" stroke-width="3"/>
-<path d="M275 215 Q308 225 315 280 L329 346 Q331 363 315 367 Q300 369 294 351 L269 285Z" fill="url(#shirt)" stroke="#b64c0b" stroke-width="3"/>
-<path d="M91 345 Q81 363 97 379 Q111 390 124 370 L126 352Z" fill="url(#skin)"/>
-<path d="M329 345 Q339 363 323 379 Q309 390 296 370 L294 352Z" fill="url(#skin)"/>
-<!-- tronco / colete -->
-<path d="M151 190 Q210 172 269 190 L290 365 Q210 390 130 365Z" fill="url(#shirt)" stroke="#b84d0a" stroke-width="4"/>
-<path d="M151 250 L269 250 L275 275 L145 275Z" fill="#fff2cf"/>
-<path d="M143 310 L277 310 L280 333 L140 333Z" fill="#fff2cf"/>
-<path d="M204 194 L204 365" stroke="#bd4e0a" stroke-width="4" opacity=".65"/>
-<path d="M145 205 L174 220 L161 360 L132 356Z" fill="#ffb13c" opacity=".65"/>
-<path d="M275 205 L246 220 L259 360 L288 356Z" fill="#b94c0b" opacity=".22"/>
-<!-- pescoÃ§o -->
-<path d="M184 160 L236 160 L239 205 Q210 225 181 205Z" fill="url(#skin)"/>
-<!-- cabeÃ§a -->
-<path d="M154 89 Q155 48 210 47 Q265 48 266 89 L258 154 Q248 187 210 190 Q172 187 162 154Z" fill="url(#skin)" stroke="#9c613e" stroke-width="3"/>
-<!-- orelhas -->
-<ellipse cx="154" cy="125" rx="12" ry="19" fill="#d99b69"/><ellipse cx="266" cy="125" rx="12" ry="19" fill="#d99b69"/>
-<!-- rosto simples -->
-<ellipse cx="187" cy="123" rx="7" ry="10" fill="#252b30"/><ellipse cx="233" cy="123" rx="7" ry="10" fill="#252b30"/>
-<circle cx="189" cy="120" r="2.5" fill="white"/><circle cx="235" cy="120" r="2.5" fill="white"/>
-<path d="M199 143 Q210 151 221 143" fill="none" stroke="#78452e" stroke-width="4" stroke-linecap="round"/>
-<path d="M195 159 Q210 169 225 159" fill="none" stroke="#8d4937" stroke-width="3" stroke-linecap="round"/>
-<!-- capacete -->
-<path d="M151 91 Q151 34 210 27 Q269 34 269 91 L257 101 L163 101Z" fill="url(#helmet)" stroke="#bd8500" stroke-width="4"/>
-<path d="M143 91 Q210 79 277 91 Q286 94 281 105 Q210 120 139 105 Q134 97 143 91Z" fill="#f3bd18" stroke="#bd8500" stroke-width="4"/>
-<path d="M210 29 L210 85" stroke="#fff1a0" stroke-width="6" opacity=".8"/>
-<path d="M178 42 Q210 23 242 42" fill="none" stroke="#fff0a0" stroke-width="5" opacity=".7"/>
-</svg>
-</div><div class="controls"><button id="btnFalar" type="button">Falar</button><button id="btnPiscar" type="button">Piscar</button><button id="btnParar" type="button">Pausar movimento</button></div></main><script src="animacoes.js"></script>
-</body></html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101a2b">
+<title>A Cidade que Floresceu na Lua - curta animado</title>
+<link rel="stylesheet" href="styles.css"></head><body>
+<main class="app">
+<header class="top"><div class="brand"><span class="mark">&#10022;</span><div><b>PEQUENOS UNIVERSOS</b><small>um curta animado original</small></div></div><div class="top-tag">HIST&#211;RIA FANT&#193;STICA &#183; 01</div></header>
+<section class="intro"><p class="eyebrow">UMA HIST&#211;RIA SOBRE O QUE NOS UNE</p><h1>A Cidade que <em>Floresceu</em> na Lua</h1><p class="lead">Em Brumavila, coisas imposs&#237;veis acontecem toda noite. Mas naquela noite, at&#233; a lua tinha um segredo.</p></section>
+<section class="screen" aria-label="Anima&#231;&#227;o da hist&#243;ria">
+<canvas id="film" width="1280" height="720" aria-label="Curta animado: A Cidade que Floresceu na Lua"></canvas>
+<div class="vignette"></div><div class="chapter" id="chapter">CAP&#205;TULO 01 &#183; A SEMENTE</div>
+<div class="caption" aria-live="polite"><span id="speaker">NARRADOR</span><p id="line">Na pequena Brumavila, a noite nunca era completamente escura.</p></div>
+<div class="loading" id="loading">Preparando a historia...</div></section>
+<section class="controls"><div class="buttons"><button id="play" class="primary">PAUSAR</button><button id="restart">RECOMECAR</button><button id="sound">SOM AMBIENTE: DESLIGADO</button></div>
+<div class="timeline"><input id="seek" type="range" min="0" max="100" value="0" aria-label="Progresso da historia"><div class="time"><span id="elapsed">00:00</span><span id="duration">01:38</span></div></div></section>
+<footer><span>Uma pequena cidade. Cinco destinos. Um segredo enorme.</span><span>ANIMACAO 2D - CANVAS E JAVASCRIPT</span></footer>
+</main><script src="animacoes.js"></script></body></html>
 

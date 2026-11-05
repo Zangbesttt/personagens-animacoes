@@ -1,16 +1,24 @@
-# Personagem SVG animado
+# A Cidade que Floresceu na Lua
 
-Demonstração do mascote inspirado na referência enviada: capacete amarelo, uniforme laranja com faixas claras e calça azul.
+Curta animado original em HTML Canvas, CSS e JavaScript, sem bibliotecas externas.
 
 ## Abrir
+Acesse o GitHub Pages ou abra `index.html` no navegador.
 
-Abra `index.html` no navegador. Não precisa instalar nada nem usar servidor.
+## Controles
+- Pausar e continuar
+- Recomecar
+- Avancar e voltar pela linha do tempo
+- Ativar ou desligar o som ambiente sintetizado no navegador
 
-## Arquivos
+## Personagens
+- Dora: trabalhadora e cuidadora do jardim de Brumavila.
+- Ivo: astronauta que chega seguindo um sinal impossivel.
+- Miro: minhoca gigante que recupera a forma humana.
+- Nox: criatura lupina que ja foi cartografo.
+- Luma: planta mistica que guarda a verdade sobre a cidade.
 
-- `index.html`: página de demonstração com o personagem em SVG.
-- `styles.css`: movimento suave, piscada automática e animação da boca.
-- `animacoes.js`: controles para falar, piscar e pausar o movimento.
-- `personagem-base.html`: versão estática original preservada.
+## Enredo
+Dora encontra uma semente luminosa. A criatura subterranea Miro recupera sua forma humana, um astronauta chega a cidade e Nox revela que ja mapeou aquele lugar. No fim, Luma revela a reviravolta: Brumavila inteira cresceu dentro de uma semente cosmica, e a lua era o botao da flor que a carregava.
 
-As animações respeitam a preferência do sistema por movimento reduzido.
+A animacao usa desenhos vetoriais gerados em tempo real, movimentos continuos, particulas, profundidade, transicoes narrativas e controles de reproducao. Nao utiliza personagens, imagens ou modelos de terceiros.
